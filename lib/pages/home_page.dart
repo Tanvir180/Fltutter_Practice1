@@ -9,12 +9,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "Try1",
-          style: TextStyle(
-            fontSize: 20,
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
+        // backgroundColor: Colors.white,
+        // elevation: 0,
+        // iconTheme: const IconThemeData(color: Colors.black),
+        title: Container(
+          alignment: Alignment.center,
+          child: const Text(
+            "My App",
           ),
         ),
       ),
@@ -23,10 +24,6 @@ class HomePage extends StatelessWidget {
           child: Text("Tanvir $day Ahammed hridoy $name"),
         ),
       ),
-
-
-
-      
       drawer: const MyDrawer(),
     );
   }
